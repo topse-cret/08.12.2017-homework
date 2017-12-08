@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+int main()
+{
+	// elephanto 2017
+	int a, b;
+	scanf_s("%d", &a);
+	scanf_s("%d", &b);
+	if ((a % 2 == 1) && (b % 2 == 1) || (a % 2 == 0) && (b % 2 == 0))
+	{
+		printf("This is my Elephanto!\n");
+	}
+	else
+	{
+		printf("You took wrong Elephanto brother!\n");
+	}
+	system("pause");
+	// 4rth digits numbers
+int x, r1, r2, r3, r4, even;
+		scanf_s("%d", &x);
+		r1 = x / 1000;
+		r2 = x % 1000 / 100;
+		r3 = x % 100 / 10;
+		r4 = x % 10;
+		if (r1 % 2 == 0)
+		{
+			even += r1;
+		}
+		else 
+		{
+			printf("Your first number is not even!");
+		}
+		if (r2 % 2 == 0)
+		{
+			even += r2;
+		}
+		else
+		{
+			printf("Your second number is not even!");
+		}
+		if (r3 % 2 == 0)
+		{
+			even += r3;
+		}
+		else
+		{
+			printf("Your third number is not even!");
+		}
+		if (r4 % 2 == 0)
+		{
+			even += r4;
+		}
+		else
+		{
+			printf("Your fourth number is not even!");
+		}
+		system("pause");
+		// max numbers
+		int number1, number2, number3, result;
+		scanf_s("%d", number1);
+		scanf_s("%d", number2);
+		scanf_s("%d", number3);
+		if ((number1 < number2) && (number1 < number3))
+		{
+			result = number3 + number2;
+		}
+		else if ((number2 < number1) && (number2 < number3))
+		{
+			result = number1 + number3;
+		}
+		else if ((number3 < number1) && (number3 < number2))
+		{
+			result = number1 + number2;
+		}
+		system("pause");
+}
