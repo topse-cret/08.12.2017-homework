@@ -16,6 +16,8 @@ int main()
 		printf("You took wrong Elephanto brother!\n");
 	}
 	system("pause");
+	
+	
 	// 4rth digits numbers
 int x, r1, r2, r3, r4, even;
 		scanf_s("%d", &x);
@@ -55,7 +57,9 @@ int x, r1, r2, r3, r4, even;
 		{
 			printf("Your fourth number is not even!");
 		}
+		printf("Final result is %d", even);
 		system("pause");
+		
 		// max numbers
 		int number1, number2, number3, result;
 		scanf_s("%d", number1);
@@ -73,5 +77,6 @@ int x, r1, r2, r3, r4, even;
 		{
 			result = number1 + number2;
 		}
+		printf("%d is your sum of max numbers!", result);
 		system("pause");
 }
